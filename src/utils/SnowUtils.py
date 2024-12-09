@@ -22,7 +22,7 @@ class SnowflakeConnector:
         )
         
             
-        self.cursor = self.connection.cursor()
+        self.cursor = self.connection.cursor() ##cursor is fetch the records and it store and holds into tne memory.
 
     def execute_query(self,query):
         self.cursor.execute(query)
@@ -32,13 +32,13 @@ class SnowflakeConnector:
         self.cursor.close()
         self.connection.close()
 
-account = "BOYTHGC-GK11969"
-user = "PRANITABODKE"
-password = "Pranita@98"
-database = "SNOWFLAKE_SAMPLE_DATA"
-schema = "TPCH_SF1"
-warehouse = "COMPUTE_WH"
-role = "ACCOUNTADMIN"
+account = "XXXXXXXXXXX"
+user = "XXXXXXXXXXX"
+password = "XXXXXXXXXXX"
+database = "XXXXXXXXXXX"
+schema = "XXXXXXXXXXX"
+warehouse = "XXXXXXXXXXX"
+role = "XXXXXXXXXXX"
 
 sf_connector = SnowflakeConnector(
     account = account,
